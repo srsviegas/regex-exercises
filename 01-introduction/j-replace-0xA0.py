@@ -1,0 +1,6 @@
+# For the given string, replace 0xA0 with 0x7F and 0xC0 with 0x1F
+
+import re
+
+ip = "start address: 0xA0, func1 address: 0xC0"
+print(re.sub(r"0xA0", r"0x7F", re.sub(r"0xC0", r"0x1F", ip)))
